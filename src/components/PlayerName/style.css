@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.player-name {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--color-floral-white);
+}
