@@ -8,13 +8,15 @@ import CardGameVerse from "./src/components/CardGameVerse";
 import BoardGame from "./src/objects/BoardGame";
 
 const $root = document.querySelector("#root");
-const $htmlPlayerName = PlayerName("Player1") + PlayerName("Player2");
 
-$root.insertAdjacentHTML("beforeend", $htmlPlayerName)
-
-const $htmlBoardGame = BoardGame(6);
-
-$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
+$root.insertAdjacentHTML(
+    "beforeend",
+    `
+        ${PlayerName("Player1")}
+        ${PlayerName("Player2")}
+        ${BoardGame(6)}
+    `
+);
 
 
 
