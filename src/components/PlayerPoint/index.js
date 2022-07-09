@@ -1,12 +1,16 @@
+import ArrowDown from "../ArrowDown";
 import "./style.css";
 
 function PlayerPoint() {
     return /*html*/`
-        <article class="player-point">
-            <div></div>
-            <div></div>
-            <div></div>
-        </article>
+        <div>
+            ${ArrowDown()}
+            <article class="player-point">
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+        </div>
     `;
 }
 
