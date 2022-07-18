@@ -1,15 +1,15 @@
 import "./style.css";
 import PlayerName from "../../components/PlayerName";
-import PlayerPoint from "../../components/PlayerPoint";
 import VsPlayer from "../../components/VsPlayer";
+import PlayerScore from "../../components/PlayerScore";
 
 function ScoreBoard() {
     return /*html*/ `
         <header class="score-board">
             ${PlayerName("Player1")}
-            ${PlayerPoint()}
+            ${PlayerScore(1)}
             ${VsPlayer()}
-            ${PlayerPoint()}
+            ${PlayerScore()}
             ${PlayerName("Player2")}
         </header>
     `; 
